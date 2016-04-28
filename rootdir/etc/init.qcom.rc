@@ -810,7 +810,7 @@ service iprenew_wigig0 /system/bin/dhcpcd -n
 on property:wifi.ftmd.load=true
     insmod /system/lib/modules/pronto/pronto_wlan.ko con_mode=5
 
-service wlan_logging /system/vendor/bin/cnss_diag -q -f
+service wlan_logging /system/vendor/bin/cnss_diag -q
     class main
     user system
     group system wifi inet net_admin sdcard_rw media_rw diag
