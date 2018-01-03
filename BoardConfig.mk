@@ -24,6 +24,8 @@
 
 DEVICE_PATH := device/motorola/albus
 
+TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
+
 BOARD_VENDOR := motorola-qcom
 
 # Bootloader
