@@ -311,6 +311,13 @@ DEVICE_PACKAGE_OVERLAYS += \
 	$(LOCAL_PATH)/overlay \
 	$(LOCAL_PATH)/overlay-lineage
 
+# RCS
+PRODUCT_PACKAGES += \
+	rcs_service_aidl \
+	rcs_service_aidl.xml \
+	rcs_service_api \
+	rcs_service_api.xml
+
 # Recovery
 PRODUCT_PACKAGES += \
 	librecovery_updater_albus
@@ -385,6 +392,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
 	$(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
+
+# Telephony
+PRODUCT_PACKAGES += \
+	telephony-ext
+
+PRODUCT_BOOT_JARS += \
+	telephony-ext
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
