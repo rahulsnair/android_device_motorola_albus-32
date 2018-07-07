@@ -79,9 +79,7 @@ PRODUCT_PACKAGES += \
 	libxml2 \
 	Snap \
 	vendor.qti.hardware.vpp@1.1 \
-	vendor.qti.hardware.vpp@1.1_vendor \
-	vendor.qti.hardware.camera.device@1.0 \
-	vendor.qti.hardware.camera.device@1.0_vendor
+	vendor.qti.hardware.vpp@1.1_vendor
 
 # Configs
 PRODUCT_COPY_FILES += \
