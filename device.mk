@@ -238,6 +238,22 @@ PRODUCT_PACKAGES += \
 	libandroid_net \
 	netutils-wrapper-1.0
 
+# NFC
+PRODUCT_COPY_FILES += \
+	frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
+
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/configs/nfc/libnfc-brcm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-brcm.conf \
+	$(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+
+PRODUCT_PACKAGES += \
+	android.hardware.nfc@1.0-impl \
+	android.hardware.nfc@1.0-service \
+	com.android.nfc_extras \
+	nfc_nci.msm8953 \
+	NfcNci \
+	Tag
+
 # Permissions
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
