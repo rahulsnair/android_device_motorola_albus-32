@@ -424,6 +424,10 @@ PRODUCT_PACKAGES += \
 	android.hardware.thermal@1.0-service \
 	thermal.msm8953
 
+# Touchscreen
+PRODUCT_PACKAGES += \
+	libtinyxml2
+
 # VNDK-SP:
 PRODUCT_PACKAGES += \
 	vndk-sp
