@@ -202,6 +202,9 @@ BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
+# Use Snapdragon LLVM, if available
+TARGET_USE_SDCLANG := true
+
 # Vendor init
 TARGET_INIT_VENDOR_LIB := libinit_albus
 TARGET_RECOVERY_DEVICE_MODULES := libinit_albus
