@@ -48,6 +48,10 @@ TARGET_USES_64_BIT_BINDER := true
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 
+# Vendor init
+TARGET_INIT_VENDOR_LIB := libinit_albus
+TARGET_RECOVERY_DEVICE_MODULES := libinit_albus
+
 # inherit from the proprietary version
 -include vendor/motorola/albus/BoardConfigVendor.mk
 
