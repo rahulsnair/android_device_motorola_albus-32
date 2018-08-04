@@ -151,7 +151,8 @@ PRODUCT_PACKAGE += \
 	init.mmi.diag_mdlog.rc \
 	init.target.rc \
 	init.mmi.rc \
-	init.qcom.rc
+	init.qcom.rc \
+	ueventd.qcom.rc
 
 # Sensors
 PRODUCT_COPY_FILES += \
