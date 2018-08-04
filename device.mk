@@ -50,6 +50,12 @@ PRODUCT_PACKAGES += \
 	android.hardware.bluetooth@1.0-impl \
 	libbt-vendor
 
+
+# Configs
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/configs/gamedwhitelist.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gamedwhitelist.xml \
+	$(LOCAL_PATH)/configs/whitelistedapps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/whitelistedapps.xml
+
 # GPS
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/gps/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
