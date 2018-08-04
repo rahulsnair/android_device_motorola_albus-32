@@ -480,7 +480,6 @@ PRODUCT_PACKAGES += \
 	android.hardware.vibrator@1.0-service
 
 # Wifi
-# WiFi
 PRODUCT_PACKAGES += \
 	android.hardware.wifi@1.0-service \
 	hostapd \
@@ -493,6 +492,7 @@ PRODUCT_PACKAGES += \
 	wifi-mac-generator
 
 PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/configs/wifi/fstman.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/fstman.ini \
 	$(LOCAL_PATH)/configs/wifi/WCNSS_cfg.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_cfg.dat \
 	$(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
 	$(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
