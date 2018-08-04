@@ -59,6 +59,9 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 
+# Seccomp
+BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
+
 # Vendor init
 TARGET_INIT_VENDOR_LIB := libinit_albus
 TARGET_RECOVERY_DEVICE_MODULES := libinit_albus
