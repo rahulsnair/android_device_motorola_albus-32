@@ -398,7 +398,6 @@ ro.com.google.rlz_ap_whitelist=y0,y5,y6,y7,y8
 ro.opa.eligible_device=true
 ro.setupwizard.require_network=
 ro.setupwizard.mode=OPTIONAL
-ro.com.google.gmsversion=8.0_r5
 ro.carrier=unknown
 ro.control_privapp_permissions=enforce
 persist.radio.apn_delay=5000
