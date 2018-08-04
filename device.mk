@@ -101,6 +101,58 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/privapp-permissions-qti.xml
 
+# Ramdisk
+PRODUCT_PACKAGE += \
+	qca6234-service.sh \
+	init.class_main.sh \
+	init.qcom.early_boot.sh \
+	init.mmi.carrier.sh \
+	init.mmi.laser.sh \
+	init.qcom.efs.sync.sh \
+	init.qcom.sh \
+	init.mdm.sh \
+	init.qcom.sensors.sh \
+	init.mmi.audio.sh \
+	apanic_save.sh \
+	init.mmi.touch.sh \
+	wlan_carrier_bin.sh \
+	init.mmi.block_perm.sh \
+	init.oem.hw.sh \
+	init.qcom.crashdata.sh \
+	init.qcom.wifi.sh \
+	apanic_copy.sh \
+	init.qcom.coex.sh \
+	init.mmi.usb.sh \
+	init.qcom.post_boot.sh \
+	init.mmi.mdlog-getlogs.sh \
+	init.qcom.syspart_fixup.sh \
+	init.gbmods.sh \
+	init.crda.sh \
+	hardware_revisions.sh \
+	init.mmi.boot.sh \
+	init.qcom.sdio.sh \
+	init.qcom.class_core.sh \
+	init.qti.ims.sh \
+	apanic_annotate.sh \
+	pstore_annotate.sh \
+	init.mmi.diag.rc \
+	init.mmi.usb.rc \
+	fstab.qcom \
+	init.mmi.sensor.rc \
+	init.qcom.factory.rc \
+	init.mmi.common.rc \
+	init.mmi.debug.rc \
+	init.mmi.volte.rc \
+	init.mmi.nonab.rc \
+	init.mmi.overlay.rc \
+	init.mods.rc \
+	init.mmi.chipset.rc \
+	init.oem.rc \
+	init.mmi.diag_mdlog.rc \
+	init.target.rc \
+	init.mmi.rc \
+	init.qcom.rc
+
 # Sensors
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
