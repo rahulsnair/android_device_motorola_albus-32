@@ -49,6 +49,10 @@ PRODUCT_PACKAGES += \
 	android.hardware.bluetooth@1.0-service-qti \
 	libbt-vendor
 
+# Boot animation
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1920
+
 # Configs
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/gamedwhitelist.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gamedwhitelist.xml \
