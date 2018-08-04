@@ -322,6 +322,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	librecovery_updater_albus
 
+# RenderScript HAL
+PRODUCT_PACKAGES += \
+	android.hardware.renderscript@1.0-impl
+
 # QCOM
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/privapp-permissions-qti.xml
