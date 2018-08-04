@@ -279,6 +279,7 @@ persist.vendor.radio.jbims=1
 persist.radio.domain.ps=0
 persist.rmnet.mux=enabled
 persist.radio.REVERSE_QMI=0
+persist.camera.HAL3.enabled=1
 persist.radio.VT_USE_MDM_TIME=0
 persist.vt.supported=1
 persist.cne.feature=1
