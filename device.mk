@@ -458,6 +458,9 @@ PRODUCT_PACKAGES += \
 	android.hardware.thermal@1.0-service \
 	thermal.msm8953
 
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/configs/thermal-engine-albus.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-albus.conf \
+
 # Touchscreen
 PRODUCT_PACKAGES += \
 	libtinyxml2
