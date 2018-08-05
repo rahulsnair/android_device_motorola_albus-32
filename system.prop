@@ -268,7 +268,6 @@ vendor.display.enable_default_color_mode=1
 #
 # ADDITIONAL_BUILD_PROPERTIES
 #
-ro.product.first_api_level=25
 ro.radio.imei.sv=10
 ro.telephony.default_network=10,0
 ro.mot.ignore_csim_appid=true
@@ -314,7 +313,6 @@ ro.bluetooth.hfp.ver=1.6
 ro.qualcomm.bt.hci_transport=smd
 persist.mot.gps.smart_battery=1
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
-ro.hardware.nfc_nci=pn54x
 audio.offload.disable=false
 audio.offload.video=false
 av.offload.enable=false
@@ -386,8 +384,6 @@ ro.vendor.sensors.pedometer=false
 sys.mod.platformsdkversion=205
 ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
 ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
-ro.com.google.rlzbrandcode=MOTB
-ro.com.google.rlz_ap_whitelist=y0,y5,y6,y7,y8
 ro.opa.eligible_device=true
 ro.carrier=unknown
 ro.control_privapp_permissions=enforce
